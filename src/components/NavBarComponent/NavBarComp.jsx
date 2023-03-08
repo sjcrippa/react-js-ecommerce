@@ -3,7 +3,7 @@ import React from 'react'
 export const NavBarComp = () => {
 
     return (
-        <div>NavBarComp</div>
+        <h1>NavBar</h1>
     )
     
 }
