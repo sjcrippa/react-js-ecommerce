@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
 
-export const NavBarComp = () => {
-
+export   const NavBarComp = () => {
     return (
-        <h1>NavBar</h1>
-    )
+        <nav>
+            <header>NavBar</header>
+        </nav>
+    );
+};
     
-}

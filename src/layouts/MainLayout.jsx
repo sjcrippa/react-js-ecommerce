@@ -1,12 +1,8 @@
 import React from 'react'
 
 export const MainLayout = ({children}) => {
-    
-    const styles = {
-        backgroundColor: "black",
-        color:"white",
-    }
+
     return (
-        <div style={styles}>{children}</div>
+        <div className='container d-flex row justify-content-center bg-success '>{children}</div>
     )
 }
