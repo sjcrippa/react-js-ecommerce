@@ -13,25 +13,21 @@ function App() {
 		setContador(contador - 1);
 	};
 
-	useEffect(() => {
-		console.log('did mount');
-	}, [])
-
-	console.log('will mount');
 	return (
-		<MainLayout>
+		<div>
+			<NavBarComp/>
 
-			<div>
+			<MainLayout>
+
 				<p>Bienvenidos a React!</p>
 				<BtnComponent label="Boton principal" clickEvent={() => console.log("boton primario")} />
-			</div>
 
-			<div>{contador}</div>
-			<button onClick={addContador}>+1</button>
-			<button onClick={deleteContador}>- 1</button>
+				<div>{contador}</div>
+				<button onClick={addContador}>+1</button>
+				<button onClick={deleteContador}>- 1</button>
 
-		</MainLayout>
-
+			</MainLayout>
+		</div>
 	);
 }
 
