@@ -15,17 +15,18 @@ function App() {
 
 	return (
 		<div>
-			<NavBarComp/>
+			<NavBarComp />
 
 			<MainLayout>
 
 				<p>Bienvenidos a React!</p>
 				<BtnComponent label="Boton principal" clickEvent={() => console.log("boton primario")} />
 
-				<div>{contador}</div>
-				<button onClick={addContador}>+1</button>
-				<button onClick={deleteContador}>- 1</button>
-
+				<div className="boxCont">
+					<div>{contador}</div>
+					<button onClick={addContador}>+1</button>
+					<button onClick={deleteContador}>- 1</button>
+				</div>
 			</MainLayout>
 		</div>
 	);
