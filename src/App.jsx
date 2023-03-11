@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BtnComponent, NavBarComp } from "./components";
+import { NavBarComp } from "./components";
 import { MainLayout } from "./layouts";
 import "./App.css";
 
@@ -21,10 +21,10 @@ function App() {
 			<MainLayout>
 
 				<h1>Bienvenidos!</h1>
-				<BtnComponent label="Boton principal" clickEvent={() => console.log("boton primario")} />
 
-				<div className="boxCont">
-					<div className="contador">{contador}</div>
+
+				<div className="contador">{contador}</div>
+				<div>
 					<button className="btn btn-primary" onClick={addContador}>+1</button>
 					<button className="btn btn-primary" onClick={deleteContador}>- 1</button>
 				</div>
