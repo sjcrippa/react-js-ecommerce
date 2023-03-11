@@ -1,2 +1,2 @@
-export * from "./BtnComponent/BtnComponent";
 export * from "./NavBarComponent/NavBarComp";
+export * from "./CartWidget/CartWidget";
